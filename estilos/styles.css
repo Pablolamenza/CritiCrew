@@ -21,7 +21,7 @@
 }
 
 .searchInput {
-  height: 50px;
+  height: 30px;
 }
 
 .search-box {
@@ -45,6 +45,10 @@
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+}
+
+.buscarBtn {
+  height: 30px;
 }
 
 .login-button button {
@@ -120,27 +124,36 @@ body {
 
 }
 
-.div-75 {
+.divPrincipal {
   flex-basis: 75%;
   background-color: #ccc;
   height: 350px;
   overflow: auto;
 }
 
-.div-25 {
+.aside {
   flex-basis: 25%;
-  background-color: #999;
+  display: flex;
+  flex-direction: column;
   height: 350px;
   overflow: auto;
 }
 
+.noticiasDiv {
+  background-color: #777;
+  overflow: auto;
+  width: 100%;
+  height: 50%;
+}
+.topSemanalDiv {
+  background-color: #999;
+  overflow: auto;
+  width: 100%;
+  height: 50%;
+}
+
 @media only screen and (max-width: 768px) {
-  .div-75 {
+  .divPrincipal {
     flex-basis: 100%;
-  }
-  
-  .div-25 {
-    flex-basis: 100%;
-    margin-top: 20px;
   }
 }
